@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Los Angeles Mountains</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- home page -->
+  <div class="mountain" id="home">
+    <nav>
+      <div class="d-flex justify-content-between navHeight">
+        <a href="#home" class="align-self-center ms-xl-5 ms-lg-5 ms-md-4 ms-sm-3 ms-2">
+          <img src="img/logo.png" alt="logo" class="logo">
+        </a>
+        <div class="align-self-center me-5">
+          <a class="homeNavLink me-3 me-sm-5" href="#history">01 History</a>
+          <a class="homeNavLink" href="#team">02 Team</a>
+        </div>
+      </div>
+    </nav>
+    <div class="lm position-absolute top-50 start-50 translate-middle">
+      <p class="losangeles">losangeles</p>
+      <p class="mountains">mountains</p>
+    </div>
+  </div>
+  <!-- sticky navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="d-flex justify-content-between navHeight">
+      <a href="#home" class="d-flex align-self-center ms-xl-5 ms-lg-5 ms-md-4 ms-sm-3 ms-2 nounderline">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <span class="logoLM ms-1">
+          <p class="logoLosangeles">LOSANGELES</p>
+          <p class="logoMountains">MOUNTAINS</p>
+        </span>
+      </a>
+      <div class="align-self-center me-5">
+        <a class="homeNavLink stickyNavLinkColor me-3 me-sm-5" href="#history">01 History</a>
+        <a class="homeNavLink stickyNavLinkColor" href="#team">02 Team</a>
+      </div>
+    </div>
+  </nav>
+  <!-- history -->
+  <section id="history">
+    <div class="historyM">
+      <div class="historyTopPadding">
+        <div class="ms-xl-5 ms-lg-5 ms-md-4 ms-sm-3 ms-2">
+          <span class="zeroOne">01.</span>
+          <span class="zeroOneHistory">history</span>
+        </div>
+        <div class="historyDescriptionMP">
+          <p class="historyDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra,
+            rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit
+            tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac,
+            tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+        </div>
+      </div>
+
+      <!-- carousel -->
+      <div class="row mx-auto my-auto justify-content-center carouselPosition">
+        <div id="recipeCarousel" class="carousel slide m-auto" data-bs-ride="carousel">
+          <div class="carousel-inner innerCarousel" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-md-3">
+                <img src="img/tn1.png" class="img-fluid" alt="tn1">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <img src="img/tn2.png" class="img-fluid" alt="tn2">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <img src="img/tn1-copy.png" class="img-fluid" alt="tn1-copy">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <img src="img/tn2-copy.png" class="img-fluid" alt="tn2-copy">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <img src="img/tn1.png" class="img-fluid" alt="tn1">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <img src="img/tn2.png" class="img-fluid" alt="tn2">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- teams -->
+  <section id="team">
+    <div class="ms-xl-5 ms-lg-5 ms-md-4 ms-sm-3 ms-2">
+      <span class="zeroTwo">02.</span>
+      <span class="zeroTwoClimb">climb</span>
+      <p class="climbDescription">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit
+        ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+    </div>
+    <!-- tab -->
+    <div class="tab d-flex justify-content-start">
+      <a class="tablinks align-self-center ms-1 me-2" onclick="openMountain(event, 'Mountain1')"
+        id="defaultOpen">Mountain 1</a>
+      <a class="tablinks align-self-center" onclick="openMountain(event, 'Mountain2')">Mountain 2</a>
+    </div>
+
+    <!-- background image -->
+    <div class="climbM">
+      <!-- tab content -->
+      <div id="Mountain1" class="tabcontent ms-xl-5 ms-lg-5 ms-md-4 ms-sm-3 ms-2 px-5 py-4">
+        <h3>Schedule</h3>
+        <div class="schedule mt-4">
+          <div class="d-flex justify-content-between">
+            <p>25 Nov 2016</p>
+            <p>Vestibulum viverra</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p>28 Nov 2016</p>
+            <p>Vestibulum viverra</p>
+          </div><br>
+          <div class="d-flex justify-content-between">
+            <p>18 Dec 2016</p>
+            <p>Vestibulum viverra</p>
+          </div><br>
+
+          <div class="d-flex justify-content-between">
+            <p>7 Jan 2017</p>
+            <p>Vestibulum viverra</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Mountain2" class="tabcontent ms-xl-5 ms-lg-5 ms-md-4 ms-sm-3 ms-2 px-5 py-4">
+        <h3>Schedule</h3>
+        <div class="schedule mt-4">
+          <div class="d-flex justify-content-between">
+            <p>27 Dec 2014</p>
+            <p>Vestibulum viverra</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p>29 Dec 2014</p>
+            <p>Vestibulum viverra</p>
+          </div><br>
+          <div class="d-flex justify-content-between">
+            <p>12 Jan 2015</p>
+            <p>Vestibulum viverra</p>
+          </div><br>
+
+          <div class="d-flex justify-content-between">
+            <p>17 Mar 2016</p>
+            <p>Vestibulum viverra</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="d-flex justify-content-between footerHeight">
+        <a href="#home" class="d-flex align-self-center ms-xl-5 ms-lg-5 ms-md-4 ms-sm-3 ms-2 nounderline">
+          <img src="img/logo.png" alt="logo" class="logo">
+          <span class="footerLogoLM ms-1">
+            <p class="footerLogoLosangeles">LOSANGELES</p>
+            <p class="footerLogoMountains">MOUNTAINS</p>
+          </span>
+        </a>
+        <div class="align-self-center me-sm-5 me-2">
+          <p class="copyright">COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
